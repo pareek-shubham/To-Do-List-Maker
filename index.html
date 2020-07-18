@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fc199e97ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="head-line-style">
+        <h1 class="head-line">Organize it all with <br>
+            To-Do
+        </h1>
+    </div>
+    <div class="style-button">
+        <a href="#input-task"> <button class="start-button" type="button">Get Started</button>
+        </a>
+    </div>
+    <div class="img-set"> </div>
+    <div class="input-label">
+        <label for="input-task"> Enter text into the input field to add items to your list: </label>
+        <br>
+        <input type="text" id="input-task" name="name" size="50" placeholder="Write your tasks here!">
+        <button id="enter-button" type="button" onclick="insert(document.getElementById ('input-task').value)">Add Task</button>
+    </div>
+    <h1 class="input-label"> Your Tasks is here, Best of Luck:-)</h1>
+    <div id="myItemList">
+        <ul id="MyTaskList">
+        </ul>
+    </div>
+    <script src="List.js" ></script>
+</body>
+
+</html> 
